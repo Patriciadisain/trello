@@ -6,16 +6,33 @@
     margin: 0;
 }
 img{
-    height: 40px;
+    height: 50px;
 }
 nav{
     background-color: white;
 /*    color: white;
     text-align: center;*/
 }
+body{
+    background-color: #0084D7;
+}
 .contenido{
-    background-color: #007FC8;
-    height: 800px;
+    padding: 10px;
+}
+.perfil{
+    background-color: #0084D7;
+    border-radius: 9px;
+    padding: 2px;
+    margin: 10px;
+    color: #E7E9EB;
+    font-weight: bold;
+    font-size: 17px;
+}
+.perfil img{
+    padding-right: 5px;
+}
+.logo{
+    padding: 10px;
 }
 .agregar{
     border-radius: 10px;
@@ -23,11 +40,12 @@ nav{
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
-    border: 2px solid #009FDF;
-    color: #009FDF;
+    background-color: #0084D7;
+    color: white;
+    font-weight: bold;
 }
 .agregar:hover{
-    border: 2px solid white;
+    background-color: #006BA9;
     color: white;
 }
 .inputLista{
@@ -44,9 +62,22 @@ nav{
 }
 .divPost{
     border-radius: 6px;
-    border: 2px solid #009FDF;
     font-size: 14px;
-    margin: 10px;
-    background-color: #009FDF;
+    margin-top: 10px;
+    background-color: #E2E4E6;
     display: block;
+    margin-right: 10px;
+}
+.divPost p{
+    color: black;
+    font-weight: bold;
+    padding: 2px;
+    word-wrap: break-word; 
+}
+.btn-añadir{
+    width: 100%;
+    margin: 5px 5px 10px 0;
+}
+.btn-añadir:hover{
+    background-color: #c1C3C4;
 }

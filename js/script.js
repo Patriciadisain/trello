@@ -5,31 +5,33 @@
 // 	});
 // });
 $(document).ready(function() {
-	var nuevaLista = 0;
-	// preguntar si hay más inputs
+	var contID = 1;
 	$('.agregar').click(function() {
-		// nuevaLista = nuevaLista + 1;
-        $('.nuevaLista').append('<input type="text" placeholder="Añadir una lista" class="col-sm-push-1 col-sm-2 agregarNuevo" id="nuevaLista"> <button class="btn-success agregarNuevo col-sm-push-1 col-sm-1" onclick="agregarLista()">Guardar</button>');
+        $('.nuevaLista').append('<input type="text" placeholder="Añadir una lista" class="col-sm-2 agregarNuevo '+contID+'" id="nuevaLista"> <button class="btn-success agregarNuevo col-sm-1" onclick="agregarLista('+contID+')">Guardar</button>');
+   		contID++;
    	});
-   	// postear el valor del input
-
-
 });
-// Si nueva lista es menor a 1 crear el input
-function agregarLista (){
+	// postear el valor del input
+function agregarLista (numId){
+	$('#nuevaLista').addClass('hidden');
+	$('.agregarNuevo').addClass('hidden');
 	var contenedorPost = document.getElementById('contenedorPost');
-	var valorInput = document.getElementsByTagName('input')[0].value;		
+	var valorInput = document.getElementsByClassName(numId)[0].value;
+	console.log(numId);	
 	var post = document.createElement('div');
 	var parrafoLista = document.createElement('p');
-	var nodoLista = document.createTextNode(valorInput);
+	var  titulo = document.createTextNode(valorInput);
 	var botonTarjeta = document.createElement('button');
 	var nodoBoton = document.createTextNode('Añadir tarjeta');
-	post.setAttribute("class", "divPost col-sm-2 col-sm-offset-1 ");
+	post.setAttribute("class", "divPost col-sm-2");
+	parrafoLista.setAttribute("class", "titulo-lista");
+	botonTarjeta.setAttribute("class", "btn btn-añadir")
 	// // parentar
-	parrafoLista.appendChild(nodoLista);
+	parrafoLista.appendChild(titulo);
 	contenedorPost.appendChild(post);
 	botonTarjeta.appendChild(nodoBoton);
 	post.appendChild(parrafoLista);
-	post.appendChild(nodoLista);
 	post.appendChild(botonTarjeta);
 };
+
+// function () falta funcion para que se creen las tarjetas

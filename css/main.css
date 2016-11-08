@@ -1,0 +1,36 @@
+/*Este es mi css*/
+.row{
+    margin: 0;
+}
+nav{
+    font-family: 'Patrick Hand', cursive !important;
+    background-color: #7A0C4D;
+    color: white;
+    text-align: center;
+}
+.contenido{
+    background-color: #e08bbd;
+    height: 800px;
+}
+.agregar{
+    border-radius: 15px;
+    padding: 10px 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid #7A0C4D;
+    font-family: 'Catamaran', sans-serif;
+    color: #7A0C4D;
+}
+.agregar:hover{
+    border: 2px solid white;
+    color: white;
+}
+.inputLista{
+    border-radius: 15px;
+    padding: 10px 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    border: 2px solid #7A0C4D;
+    font-family: 'Catamaran', sans-serif;
+}

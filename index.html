@@ -3,7 +3,7 @@
   <head>
     <title>Trello</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="imagen/trello-ico.png" />
+    <link rel="icon" type="image/png" href="imagen/favicon.png" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
@@ -13,16 +13,16 @@
   <body>
   <nav>
     <div class="container-fluid">
-      <h1>Trello</h1>
-    </div>
+      <div class="row">
+        <a href="index.html" class=" col-sm-push-5 col-sm-2 img-responsive"><img src="imagen/trello-logo-blue.png" alt="logo"></a>
+      </div>
   </nav>
   <section class="contenido">
       <div class="row">
-        <span class="agregar btn col-sm-push-1 col-sm-3">Añadir una lista</span>  
+        <span class="agregar btn btn-primary btn-lg active col-sm-push-1 col-sm-2">Añadir una lista</span>  
       </div> 
-      <div class="row">
-        <div class="nuevaLista"></div>
-      </div>          
+      <div class="row nuevaLista" id="contenedorPost">
+      </div>       
   </section>
     <script src="js/jquery-3.1.1.min (1).js"></script>
     <script src="js/script.js"></script>

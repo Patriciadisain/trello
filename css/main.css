@@ -1,36 +1,52 @@
 /*Este es mi css*/
+*{
+    font-family: Arial;
+}
 .row{
     margin: 0;
 }
+img{
+    height: 40px;
+}
 nav{
-    font-family: 'Patrick Hand', cursive !important;
-    background-color: #7A0C4D;
-    color: white;
-    text-align: center;
+    background-color: white;
+/*    color: white;
+    text-align: center;*/
 }
 .contenido{
-    background-color: #e08bbd;
+    background-color: #007FC8;
     height: 800px;
 }
 .agregar{
-    border-radius: 15px;
-    padding: 10px 5px;
-    font-size: 20px;
+    border-radius: 10px;
+    padding: 8px 4px;
+    font-size: 16px;
     text-align: center;
-    margin-top: 30px;
-    border: 2px solid #7A0C4D;
-    font-family: 'Catamaran', sans-serif;
-    color: #7A0C4D;
+    margin-top: 20px;
+    border: 2px solid #009FDF;
+    color: #009FDF;
 }
 .agregar:hover{
     border: 2px solid white;
     color: white;
 }
 .inputLista{
-    border-radius: 15px;
-    padding: 10px 5px;
-    font-size: 16px;
-    margin-top: 15px;
-    border: 2px solid #7A0C4D;
-    font-family: 'Catamaran', sans-serif;
+    border-radius: 6px;
+    border: 1px solid ;
+    padding: 8px 4px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.agregarNuevo{
+    border-radius: 6px;
+    margin: 5px;
+}
+.divPost{
+    border-radius: 6px;
+    border: 2px solid #009FDF;
+    font-size: 14px;
+    margin: 10px;
+    background-color: #009FDF;
+    display: block;
 }

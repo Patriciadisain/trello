@@ -1,6 +1,9 @@
-/*Este es mi css*/
+/*Css para Trello*/
 *{
     font-family: Arial;
+}
+body{
+    background-color: #0084D7;
 }
 .row{
     margin: 0;
@@ -9,20 +12,18 @@ img{
     height: 50px;
 }
 nav{
-    background-color: white;
-/*    color: white;
-    text-align: center;*/
-}
-body{
-    background-color: #0084D7;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    width: 100%;
 }
 .contenido{
     padding: 10px;
+    overflow-x: auto;
 }
 .perfil{
     background-color: #0084D7;
     border-radius: 9px;
-    padding: 2px;
+    padding: 4px;
     margin: 10px;
     color: #E7E9EB;
     font-weight: bold;
@@ -38,8 +39,8 @@ body{
     border-radius: 10px;
     padding: 8px 4px;
     font-size: 16px;
-    text-align: center;
-    margin-top: 20px;
+    text-align: color: #000;enter;
+    margin-top: 100px;
     background-color: #0084D7;
     color: white;
     font-weight: bold;
@@ -83,9 +84,20 @@ body{
 }
 textarea{
     border-radius: 6px;
-    border: 1px solid #c1C3C4;
     padding: 5px;
     font-size: 12px;
     margin-top: 10px;
     width: 100%;
+    background-color: transparent;
+    border: 1px solid #000000;
+    scrollbar-arrow-color: #000066;
+    scrollbar-base-color: #000033;
+    scrollbar-dark-shadow-color: #336699;
+    crollbar-track-color: #666633;
+    scrollbar-face-color: #cc9933;
+    scrollbar-shadow-color: #DDDDDD;
+    scrollbar-highlight-color: #CCCCCC;
+}
+textarea:hover{
+    background-color: white;
 }
